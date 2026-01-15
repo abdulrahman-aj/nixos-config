@@ -7,7 +7,6 @@
     loader.systemd-boot.enable = true;
     loader.efi.canTouchEfiVariables = true;
     kernelPackages = pkgs.linuxPackages_latest;
-    initrd.luks.devices."luks-e08190a4-c01b-48ff-b20e-87f82a33ecbf".device = "/dev/disk/by-uuid/e08190a4-c01b-48ff-b20e-87f82a33ecbf";
   };
 
   networking = {
