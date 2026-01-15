@@ -86,6 +86,7 @@
       lazygit
       minikube
       nodejs
+      nerd-fonts.jetbrains-mono
       openjdk
       postgresql
       python3
