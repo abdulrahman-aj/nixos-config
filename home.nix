@@ -74,15 +74,7 @@
         docker-up      = "sudo systemctl start docker.service docker.socket && echo \"🐳 Docker started\"";
         docker-status  = "systemctl status docker.service --no-pager";
 
-        postgres-up = ''
-          sudo docker run -d --restart unless-stopped \
-            -p "127.0.0.1:5432:5432" \
-            --name=postgres18 \
-            -e POSTGRES_HOST_AUTH_METHOD=trust \
-            -v postgres18-data:/var/lib/postgresql \
-            postgres:18
-        '';
-
+        postgres-up = "sudo docker run -d --restart unless-stopped -p 127.0.0.1:5432:5432 --name=postgres18 -e POSTGRES_HOST_AUTH_METHOD=trust -v postgres18-data:/var/lib/postgresql postgres:18";
         psql-local = "psql -h localhost -U postgres";
       };
     };
@@ -90,17 +82,47 @@
     dconf = {
       enable = true;
       settings = {
+        "org/gnome/desktop/wm/preferences" = {
+          num-workspaces = 6;
+        };
+        "org/gnome/desktop/wm/keybindings" = {
+          toggle-fullscreen = ["<Super>f"];
+          close = ["<Super>w"];
+        };
+        "org/gnome/shell/app-switcher" = {
+          current-workspace-only = true;
+        };
         "org/gnome/desktop/interface" = {
           gtk-theme = "Adwaita-dark";
           icon-theme = "Adwaita";
           color-scheme = "prefer-dark";
+        };
+        "org/gnome/mutter" = {
+          dynamic-workspaces = false;
+        };
+        "org/gnome/desktop/interface" = {
+          enable-animations = true;
+          show-battery-percentage = true;
         };
         "org/gnome/shell" = {
           enabled-extensions = [
             "appindicatorsupport@rgcjonas.gmail.com"
             "dash-to-dock@micxgx.gmail.com"
           ];
+          favorite-apps  = [
+            "google-chrome.desktop"
+            "org.gnome.Nautilus.desktop"
+            "codium.desktop"
+            "com.mitchellh.ghostty.desktop"
+          ];
         };
+        "org/gnome/settings-daemon/plugins/power" = {
+          sleep-inactive-ac-timeout = 900;
+          sleep-inactive-battery-timeout = 1800;
+        };
+        # "/org/gnome/shell/extensions/dash-to-dock" = {
+        #   hot-keys = false;
+        # };
       };
     };
   };
