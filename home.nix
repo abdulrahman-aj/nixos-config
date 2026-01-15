@@ -39,6 +39,54 @@
       };
     };
 
+    programs.zsh = {
+      enable = true;
+
+      oh-my-zsh = {
+        enable = true;
+        theme = "robbyrussell";
+        plugins = [
+          "aws"
+          "docker"
+          "gcloud"
+          "gh"
+          "git"
+          "golang"
+          "kubectl"
+          "minikube"
+        ];
+      };
+
+      autosuggestion.enable = true;
+      syntaxHighlighting.enable = true;
+
+      shellAliases = {
+        vim = "nvim";
+        lzg = "lazygit";
+        lzd = "lazydocker";
+        ff  = "fastfetch";
+        open = "xdg-open";
+
+        docker-disable = "sudo systemctl disable docker.service docker.socket && echo \"🚫 Docker disabled at boot\"";
+        docker-enable  = "sudo systemctl enable docker.service docker.socket && echo \"✅ Docker enabled at boot\"";
+        docker-down    = "sudo systemctl stop docker.service docker.socket && echo \"🛑 Docker stopped\"";
+        docker-restart = "sudo systemctl restart docker.service && echo \"🔁 Docker restarted\"";
+        docker-up      = "sudo systemctl start docker.service docker.socket && echo \"🐳 Docker started\"";
+        docker-status  = "systemctl status docker.service --no-pager";
+
+        postgres-up = ''
+          sudo docker run -d --restart unless-stopped \
+            -p "127.0.0.1:5432:5432" \
+            --name=postgres18 \
+            -e POSTGRES_HOST_AUTH_METHOD=trust \
+            -v postgres18-data:/var/lib/postgresql \
+            postgres:18
+        '';
+
+        psql-local = "psql -h localhost -U postgres";
+      };
+    };
+
     dconf = {
       enable = true;
       settings = {
