@@ -147,6 +147,5 @@
     defaultEditor = true;
   };
 
-  programs.dconf.enable = true;
   system.stateVersion = "25.11";
 }
