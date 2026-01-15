@@ -83,7 +83,7 @@
       enable = true;
       settings = {
         "org/gnome/desktop/wm/preferences" = {
-          num-workspaces = 6;
+          num-workspaces = 5;
         };
         "org/gnome/desktop/wm/keybindings" = {
           toggle-fullscreen = ["<Super>f"];
@@ -99,6 +99,9 @@
         };
         "org/gnome/mutter" = {
           dynamic-workspaces = false;
+          experimental-features = [
+            "scale-monitor-framebuffer"
+          ];
         };
         "org/gnome/desktop/interface" = {
           enable-animations = true;
@@ -120,9 +123,41 @@
           sleep-inactive-ac-timeout = 900;
           sleep-inactive-battery-timeout = 1800;
         };
-        # "/org/gnome/shell/extensions/dash-to-dock" = {
-        #   hot-keys = false;
-        # };
+        "org/gnome/shell/keybindings" = {
+          switch-to-application-1 = [];
+          switch-to-application-2 = [];
+          switch-to-application-3 = [];
+          switch-to-application-4 = [];
+          switch-to-application-5 = [];
+          switch-to-application-6 = [];
+          switch-to-application-7 = [];
+          switch-to-application-8 = [];
+          switch-to-application-9 = [];
+          open-new-window-application-1 = [];
+          open-new-window-application-2 = [];
+          open-new-window-application-3 = [];
+          open-new-window-application-4 = [];
+          open-new-window-application-5 = [];
+          open-new-window-application-6 = [];
+          open-new-window-application-7 = [];
+          open-new-window-application-8 = [];
+          open-new-window-application-9 = [];
+        };
+        "org/gnome/desktop/wm/keybindings" = {
+          switch-to-workspace-1 = [ "<Super>1" ];
+          switch-to-workspace-2 = [ "<Super>2" ];
+          switch-to-workspace-3 = [ "<Super>3" ];
+          switch-to-workspace-4 = [ "<Super>4" ];
+          switch-to-workspace-5 = [ "<Super>5" "<Super>0" ];
+          move-to-workspace-1 = [ "<Super><Shift>1" ];
+          move-to-workspace-2 = [ "<Super><Shift>2" ];
+          move-to-workspace-3 = [ "<Super><Shift>3" ];
+          move-to-workspace-4 = [ "<Super><Shift>4" ];
+          move-to-workspace-5 = [ "<Super><Shift>5" "<Super><Shift>0" ];
+        };
+        "org/gnome/shell/extensions/dash-to-dock" = {
+          hot-keys = false;
+        };
       };
     };
   };
