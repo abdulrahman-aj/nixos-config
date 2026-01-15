@@ -103,7 +103,6 @@
     systemPackages = with pkgs; [
       git
       google-chrome
-      neovim
       vscodium
       wget
       wl-clipboard
@@ -172,6 +171,11 @@
       export EDITOR=nvim
       export PATH="$PATH:$HOME/.local/bin"
     '';
+  };
+
+  programs.neovim = {
+    enable = true;
+    defaultEditor = true;
   };
 
   # TODO: git username, email, default branch main
