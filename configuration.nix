@@ -108,6 +108,10 @@
       wl-clipboard
       tldr
       zsh
+      lazydocker
+      lazygit
+      kubectl
+      minikube
 
       gnomeExtensions.dash-to-dock
       gnomeExtensions.appindicator
