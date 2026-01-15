@@ -66,26 +66,46 @@
 
   environment = {
     systemPackages = with pkgs; [
+      awscli2
+      clang
+      discord
+      fastfetch
+      fd
+      fzf
+      gh
+      ghostty
+      gnomeExtensions.appindicator
+      gnomeExtensions.dash-to-dock
+      go
       google-chrome
+      google-cloud-sdk
       home-manager
+      jq
       kubectl
       lazydocker
       lazygit
       minikube
+      nodejs
+      openjdk
+      postgresql
+      python3
+      ruby
+      sqlc
+      sqlite
       tldr
       vscodium
       wget
       wl-clipboard
       zsh
-
-      gnomeExtensions.dash-to-dock
-      gnomeExtensions.appindicator
     ];
 
     gnome.excludePackages = with pkgs; [
-      gnome-tour
       gnome-calendar
       gnome-connections
+      gnome-contacts
+      gnome-maps
+      gnome-music
+      gnome-tour
     ];
   };
 
