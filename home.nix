@@ -39,7 +39,7 @@
         theme = "Catppuccin Mocha";
         font-family = "JetBrainsMono Nerd Font";
         font-style  = "Regular";
-        font-size   = 12;
+        font-size   = 13;
         window-theme          = "ghostty";
         window-padding-x      = 0;
         window-padding-y      = 0;
