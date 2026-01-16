@@ -1,18 +1,18 @@
-# nixos-config
+# NixOS Config
 
-# Post install:
-- Restart
-- ```ssh-keygen -t ed25519 -C ajlouni2000@gmail.com```
-- gh auth login
-- chrome
-  - login
-  - set as default
+## Installation
+Run the bootstrap script:
+```bash
+bash bootstrap.sh
+```
 
-### TODO:
-- Opencode
-- Zed
-  - Theme: Dark Modern
-  - Font: increase
-  - Extensions:
-    - Nix
-  - Autosave (the default?)
+## Post-install
+1. Restart the system.
+2. Generate SSH key:
+```bash
+ssh-keygen -t ed25519 -C ajlouni2000@gmail.com
+```
+3. Authenticate with GitHub:
+```bash
+gh auth login
+```
