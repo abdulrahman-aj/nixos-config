@@ -83,13 +83,6 @@
     dconf = {
       enable = true;
       settings = {
-        "org/gnome/desktop/wm/preferences" = {
-          num-workspaces = 5;
-        };
-        "org/gnome/desktop/wm/keybindings" = {
-          toggle-fullscreen = ["<Super>f"];
-          close = ["<Super>w"];
-        };
         "org/gnome/shell/app-switcher" = {
           current-workspace-only = true;
         };
@@ -126,6 +119,82 @@
           sleep-inactive-ac-timeout = 900;
           sleep-inactive-battery-timeout = 1800;
         };
+
+        "org/gnome/settings-daemon/plugins/media-keys" = {
+          custom-keybindings = [
+            "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
+            "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/"
+            "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/"
+            "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/"
+            "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/"
+            "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/"
+            "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/"
+            "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/"
+            "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/"
+            "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9/"
+          ];
+        };
+
+        "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
+          name = "Launch Ghostty";
+          command = "ghostty";
+          binding = "<Super>Return";
+        };
+
+        "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
+          name = "Launch Google Chrome";
+          command = "google-chrome-stable --new-window";
+          binding = "<Super>b";
+        };
+
+        "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2" = {
+          name = "Launch Google Chrome Incognito";
+          command = "google-chrome-stable --incognito --new-window";
+          binding = "<Super><Shift>b";
+        };
+
+        "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3" = {
+          name = "Launch Gmail";
+          command = "google-chrome-stable --app=\"https://mail.google.com\"";
+          binding = "<Super>e";
+        };
+
+        "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4" = {
+          name = "Launch Google Calendar";
+          command = "google-chrome-stable --app=\"https://calendar.google.com\"";
+          binding = "<Super>c";
+        };
+
+        "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5" = {
+          name = "Launch Notion";
+          command = "google-chrome-stable --app=\"https://www.notion.so\"";
+          binding = "<Super>n";
+        };
+
+        "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6" = {
+          name = "Launch Gemini";
+          command = "google-chrome-stable --app=\"https://gemini.google.com\"";
+          binding = "<Super>a";
+        };
+
+        "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7" = {
+          name = "Launch YouTube";
+          command = "google-chrome-stable --app=\"https://www.youtube.com\"";
+          binding = "<Super>y";
+        };
+
+        "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8" = {
+          name = "Launch YouTube Music";
+          command = "google-chrome-stable --app=\"https://music.youtube.com\"";
+          binding = "<Super>m";
+        };
+
+        "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9" = {
+          name = "Launch Zed";
+          command = "zeditor";
+          binding = "<Super>z";
+        };
+
         "org/gnome/shell/keybindings" = {
           switch-to-application-1 = [];
           switch-to-application-2 = [];
@@ -145,18 +214,43 @@
           open-new-window-application-7 = [];
           open-new-window-application-8 = [];
           open-new-window-application-9 = [];
+          focus-active-notification = [];
+          shift-overview-down = [];
+          shift-overview-up = [];
+          toggle-application-view = [];
+          toggle-message-tray = [];
+          toggle-quick-settings = [];
+        };
+        "org/gnome/desktop/wm/preferences" = {
+          num-workspaces = 5;
         };
         "org/gnome/desktop/wm/keybindings" = {
+          toggle-fullscreen = ["<Super>f"];
+          close = ["<Super>w"];
           switch-to-workspace-1 = [ "<Super>1" ];
           switch-to-workspace-2 = [ "<Super>2" ];
           switch-to-workspace-3 = [ "<Super>3" ];
           switch-to-workspace-4 = [ "<Super>4" ];
-          switch-to-workspace-5 = [ "<Super>5" "<Super>0" ];
+          switch-to-workspace-5 = [
+            "<Super>5"
+            "<Super>6"
+            "<Super>7"
+            "<Super>8"
+            "<Super>9"
+            "<Super>0"
+          ];
           move-to-workspace-1 = [ "<Super><Shift>1" ];
           move-to-workspace-2 = [ "<Super><Shift>2" ];
           move-to-workspace-3 = [ "<Super><Shift>3" ];
           move-to-workspace-4 = [ "<Super><Shift>4" ];
-          move-to-workspace-5 = [ "<Super><Shift>5" "<Super><Shift>0" ];
+          move-to-workspace-5 = [
+            "<Super><Shift>5"
+            "<Super><Shift>6"
+            "<Super><Shift>7"
+            "<Super><Shift>8"
+            "<Super><Shift>9"
+            "<Super><Shift>0"
+          ];
         };
         "org/gnome/shell/extensions/dash-to-dock" = {
           hot-keys = false;
