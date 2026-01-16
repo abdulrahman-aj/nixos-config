@@ -36,7 +36,7 @@
       package = pkgs.ghostty;
 
       settings = {
-        theme = "Catppuccin Mocha";
+        theme = "Dark Modern";
         font-family = "JetBrainsMono Nerd Font";
         font-style  = "Regular";
         font-size   = 13;
