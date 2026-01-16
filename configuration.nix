@@ -71,11 +71,14 @@
       fastfetch
       fd
       fzf
+      gcc
       gh
       ghostty
       gnomeExtensions.appindicator
       gnomeExtensions.dash-to-dock
+      gnumake
       go
+      gopls
       google-chrome
       google-cloud-sdk
       home-manager
@@ -96,6 +99,7 @@
       vscodium
       wget
       wl-clipboard
+      zed-editor
       zsh
     ];
 
