@@ -18,19 +18,6 @@
       };
     };
 
-    programs.vscode = {
-      enable = true;
-      package = pkgs.vscodium;
-
-        userSettings = {
-          files.autoSave = "onFocusChange";
-        };
-
-      profiles.default.extensions = with pkgs.vscode-extensions; [
-        jnoortheen.nix-ide
-      ];
-    };
-
     programs.ghostty = {
       enable = true;
       package = pkgs.ghostty;
@@ -131,7 +118,7 @@
           favorite-apps  = [
             "google-chrome.desktop"
             "org.gnome.Nautilus.desktop"
-            "codium.desktop"
+            "dev.zed.Zed.desktop"
             "com.mitchellh.ghostty.desktop"
           ];
         };

@@ -96,7 +96,6 @@
       sqlc
       sqlite
       tldr
-      vscodium
       wget
       wl-clipboard
       zed-editor
