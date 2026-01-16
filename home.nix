@@ -104,6 +104,7 @@
           gtk-theme = "Adwaita-dark";
           icon-theme = "Adwaita";
           color-scheme = "prefer-dark";
+          clock-format = "12h";
         };
         "org/gnome/mutter" = {
           dynamic-workspaces = false;
