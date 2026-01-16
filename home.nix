@@ -101,6 +101,7 @@
           dynamic-workspaces = false;
           experimental-features = [
             "scale-monitor-framebuffer"
+            "xwayland-native-scaling"
           ];
         };
         "org/gnome/desktop/interface" = {
