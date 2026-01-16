@@ -21,6 +21,11 @@
     programs.vscode = {
       enable = true;
       package = pkgs.vscodium;
+
+        userSettings = {
+          files.autoSave = "onFocusChange";
+        };
+
       profiles.default.extensions = with pkgs.vscode-extensions; [
         jnoortheen.nix-ide
       ];
