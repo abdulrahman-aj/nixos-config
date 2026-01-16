@@ -109,8 +109,8 @@
           favorite-apps  = [
             "google-chrome.desktop"
             "dev.zed.Zed.desktop"
-            "org.gnome.Nautilus.desktop"
             "com.mitchellh.ghostty.desktop"
+            "discord.desktop"
           ];
         };
         "org/gnome/settings-daemon/plugins/power" = {
