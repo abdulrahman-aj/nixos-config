@@ -91,6 +91,8 @@
           icon-theme = "Adwaita";
           color-scheme = "prefer-dark";
           clock-format = "12h";
+          enable-animations = true;
+          show-battery-percentage = true;
         };
         "org/gnome/mutter" = {
           dynamic-workspaces = false;
@@ -99,10 +101,6 @@
             "xwayland-native-scaling"
           ];
         };
-        "org/gnome/desktop/interface" = {
-          enable-animations = true;
-          show-battery-percentage = true;
-        };
         "org/gnome/shell" = {
           enabled-extensions = [
             "appindicatorsupport@rgcjonas.gmail.com"
@@ -110,8 +108,8 @@
           ];
           favorite-apps  = [
             "google-chrome.desktop"
-            "org.gnome.Nautilus.desktop"
             "dev.zed.Zed.desktop"
+            "org.gnome.Nautilus.desktop"
             "com.mitchellh.ghostty.desktop"
           ];
         };
@@ -140,55 +138,46 @@
           command = "ghostty";
           binding = "<Super>Return";
         };
-
         "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
           name = "Launch Google Chrome";
           command = "google-chrome-stable --new-window";
           binding = "<Super>b";
         };
-
         "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2" = {
           name = "Launch Google Chrome Incognito";
           command = "google-chrome-stable --incognito --new-window";
           binding = "<Super><Shift>b";
         };
-
         "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3" = {
           name = "Launch Gmail";
           command = "google-chrome-stable --app=\"https://mail.google.com\"";
           binding = "<Super>e";
         };
-
         "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4" = {
           name = "Launch Google Calendar";
           command = "google-chrome-stable --app=\"https://calendar.google.com\"";
           binding = "<Super>c";
         };
-
         "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5" = {
           name = "Launch Notion";
           command = "google-chrome-stable --app=\"https://www.notion.so\"";
           binding = "<Super>n";
         };
-
         "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6" = {
           name = "Launch Gemini";
           command = "google-chrome-stable --app=\"https://gemini.google.com\"";
           binding = "<Super>a";
         };
-
         "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7" = {
           name = "Launch YouTube";
           command = "google-chrome-stable --app=\"https://www.youtube.com\"";
           binding = "<Super>y";
         };
-
         "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8" = {
           name = "Launch YouTube Music";
           command = "google-chrome-stable --app=\"https://music.youtube.com\"";
           binding = "<Super>m";
         };
-
         "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9" = {
           name = "Launch Zed";
           command = "zeditor";
