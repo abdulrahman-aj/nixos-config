@@ -74,11 +74,12 @@
       syntaxHighlighting.enable = true;
 
       shellAliases = {
-        vim = "nvim";
-        lzg = "lazygit";
-        lzd = "lazydocker";
         ff  = "fastfetch";
+        lzd = "lazydocker";
+        lzg = "lazygit";
         open = "xdg-open";
+        vim = "nvim";
+        zed = "zeditor";
 
         docker-disable = "sudo systemctl disable docker.service docker.socket && echo \"🚫 Docker disabled at boot\"";
         docker-enable  = "sudo systemctl enable docker.service docker.socket && echo \"✅ Docker enabled at boot\"";
