@@ -66,6 +66,7 @@
   environment = {
     systemPackages = with pkgs; [
       awscli2
+      btop
       clang
       discord
       fastfetch
