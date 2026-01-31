@@ -1,5 +1,7 @@
 # NixOS Config
 
+note: this is intended for personal use only
+
 ## Installation
 Run the bootstrap script:
 ```bash
