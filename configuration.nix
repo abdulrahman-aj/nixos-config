@@ -69,6 +69,7 @@
       btop
       clang
       discord
+      dosfstools
       fastfetch
       fd
       fzf
@@ -90,6 +91,7 @@
       minikube
       nodejs
       nerd-fonts.jetbrains-mono
+      ntfs3g
       openjdk
       postgresql
       python3

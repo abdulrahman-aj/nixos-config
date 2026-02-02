@@ -108,6 +108,7 @@
           ];
           favorite-apps  = [
             "google-chrome.desktop"
+            "org.gnome.Nautilus.desktop"
             "dev.zed.Zed.desktop"
             "com.mitchellh.ghostty.desktop"
             "discord.desktop"
@@ -130,6 +131,7 @@
             "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/"
             "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/"
             "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9/"
+            "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10/"
           ];
         };
 
@@ -151,7 +153,7 @@
         "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3" = {
           name = "Launch Gmail";
           command = "google-chrome-stable --app=\"https://mail.google.com\"";
-          binding = "<Super>e";
+          binding = "<Super>g";
         };
         "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4" = {
           name = "Launch Google Calendar";
@@ -182,6 +184,11 @@
           name = "Launch Zed";
           command = "zeditor";
           binding = "<Super>z";
+        };
+        "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10" = {
+          name = "Launch Nautilus";
+          command = "nautilus";
+          binding = "<Super>e";
         };
 
         "org/gnome/shell/keybindings" = {
