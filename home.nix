@@ -39,6 +39,41 @@
       };
     };
 
+    programs.zed-editor = {
+      enable = true;
+
+      userSettings = {
+        terminal = {
+          default_height = 600;
+        };
+        autosave = "on_focus_change";
+        relative_line_numbers = "disabled";
+        vertical_scroll_margin = 999.0;
+        buffer_font_family= ".ZedMono";
+        icon_theme = {
+          mode = "system";
+          light = "Zed (Default)";
+          dark = "Zed (Default)";
+        };
+        session = {
+          trust_all_worktrees = true;
+        };
+        vim_mode = true;
+        ui_font_size = 20;
+        buffer_font_size = 16.0;
+        theme = {
+          mode = "system";
+          light = "One Light";
+          dark = "VSCode Dark Modern";
+        };
+      };
+
+      extensions = [
+        "nix"
+        "vscode-dark-modern"
+      ];
+    };
+
     programs.zsh = {
       enable = true;
 

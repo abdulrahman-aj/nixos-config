@@ -75,7 +75,7 @@
       fzf
       gcc
       gh
-      ghostty
+      git
       gnomeExtensions.appindicator
       gnomeExtensions.dash-to-dock
       gnumake
@@ -102,7 +102,6 @@
       tree
       wget
       wl-clipboard
-      zed-editor
       zsh
     ] ++ [
       unstable.opencode
