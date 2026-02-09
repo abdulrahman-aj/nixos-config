@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, unstable, ... }:
 
 {
   imports = [ ./hardware-configuration.nix ];
@@ -68,7 +68,6 @@
       awscli2
       btop
       clang
-      codecrafters-cli
       discord
       dosfstools
       fastfetch
@@ -105,6 +104,8 @@
       wl-clipboard
       zed-editor
       zsh
+    ] ++ [
+      unstable.codecrafters-cli
     ];
 
     gnome.excludePackages = with pkgs; [
