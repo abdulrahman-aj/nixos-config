@@ -68,6 +68,7 @@
       awscli2
       btop
       clang
+      codecrafters-cli
       discord
       dosfstools
       fastfetch
