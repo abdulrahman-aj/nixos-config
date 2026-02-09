@@ -95,6 +95,7 @@
       openjdk
       postgresql
       python3
+      redis
       ruby
       sqlc
       sqlite
