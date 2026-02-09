@@ -99,6 +99,7 @@
       sqlc
       sqlite
       tldr
+      tree
       wget
       wl-clipboard
       zed-editor
