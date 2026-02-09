@@ -105,6 +105,7 @@
       zed-editor
       zsh
     ] ++ [
+      unstable.opencode
       unstable.codecrafters-cli
     ];
 
