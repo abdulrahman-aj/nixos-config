@@ -121,6 +121,9 @@
         "org/gnome/shell/app-switcher" = {
           current-workspace-only = true;
         };
+        "org/gnome/desktop/notifications" = {
+          show-in-lock-screen = false;
+        };
         "org/gnome/desktop/interface" = {
           gtk-theme = "Adwaita-dark";
           icon-theme = "Adwaita";
