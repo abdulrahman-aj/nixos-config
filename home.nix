@@ -131,6 +131,7 @@
           clock-format = "12h";
           enable-animations = true;
           show-battery-percentage = true;
+          accent-color = "teal";
         };
         "org/gnome/mutter" = {
           dynamic-workspaces = false;
