@@ -110,8 +110,9 @@
         docker-up      = "sudo systemctl start docker.service docker.socket && echo \"🐳 Docker started\"";
         docker-status  = "systemctl status docker.service --no-pager";
 
-        postgres-up = "sudo docker run -d --restart unless-stopped -p 127.0.0.1:5432:5432 --name=postgres18 -e POSTGRES_HOST_AUTH_METHOD=trust -v postgres18-data:/var/lib/postgresql postgres:18";
+        postgres-up = "docker run -d --restart unless-stopped -p 127.0.0.1:5432:5432 --name=postgres18 -e POSTGRES_HOST_AUTH_METHOD=trust -v postgres18-data:/var/lib/postgresql postgres:18";
         psql-local = "psql -h localhost -U postgres";
+        redis-up = "docker run -d --restart unless-stopped -p 127.0.0.1:6379:6379 --name=redis8 redis:8";
       };
     };
 
