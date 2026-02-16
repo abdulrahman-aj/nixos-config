@@ -43,6 +43,7 @@
       enable = true;
 
       userSettings = {
+        always_treat_brackets_as_autoclosed = true;
         terminal = {
           default_height = 600;
         };
