@@ -2,4 +2,4 @@
 
 set -euo pipefail
 cp /etc/nixos/hardware-configuration.nix .
-sudo nixos-rebuild switch --flake .#nixos
+sudo nixos-rebuild switch --flake .#nixos --option cores 0 -L

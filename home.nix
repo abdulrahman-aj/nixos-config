@@ -7,6 +7,10 @@
     home = {
       homeDirectory = "/home/abdulrahman";
       stateVersion = "25.11";
+
+      sessionPath = [
+        "$HOME/go/bin"
+      ];
     };
 
     programs.git = {
