@@ -48,6 +48,8 @@
 
       userSettings = {
         always_treat_brackets_as_autoclosed = true;
+        auto_signature_help = true;
+        show_signature_help_after_edits = true;
         terminal = {
           default_height = 600;
         };
