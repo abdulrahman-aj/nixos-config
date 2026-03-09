@@ -74,6 +74,7 @@
       };
 
       extensions = [
+        "dockerfile"
         "nix"
         "vscode-dark-modern"
       ];
