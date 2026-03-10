@@ -66,8 +66,8 @@
           trust_all_worktrees = true;
         };
         vim_mode = true;
-        ui_font_size = 20;
-        buffer_font_size = 16.0;
+        ui_font_size = 18;
+        buffer_font_size = 15.0;
         theme = {
           mode = "system";
           light = "One Light";
