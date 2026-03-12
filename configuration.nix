@@ -88,6 +88,7 @@
       kubectl
       lazydocker
       lazygit
+      localsend
       minikube
       nodejs
       nerd-fonts.jetbrains-mono
